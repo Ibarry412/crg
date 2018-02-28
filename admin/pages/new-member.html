@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Backoffice-CRG</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Croix Rouge Guinée</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> &nbsp;Votre Profil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>&nbsp;Paramètres</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Se déconnecter</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Rechercher...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Tableau de bord</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-group fa-fw"></i>Membres<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="new-member.html" class="active">Ajouter</a>
+                                </li>
+                                <li>
+                                    <a href="#">Listes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Catégories</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        </li>
+                        <li>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i>Modele d'onglet</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i>Autre modele d'onglet<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="panels-wells.html">Enfant 1</a>
+                                </li>
+                                <li>
+                                    <a href="buttons.html">Enfant 2</a>
+                                </li>
+                                <li>
+                                    <a href="notifications.html">Enfant 3</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Enfant 4</a>
+                                </li>
+                                <li>
+                                    <a href="icons.html"> Enfant 4</a>
+                                </li>
+                                <li>
+                                    <a href="grid.html">Enfant 5</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Tableau de bord</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-user fa-fw"></i> &nbsp;Détail des informations du membre
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                     <div class="row">
+                                        <div class="col-md-9">
+                                            <h1>Votre formation</h1>
+                                            <p>En tant que membre, vous avez le droit d'assister à des cours de formation, tels que  Leadership et Management</p>
+                                            <table class="table">
+                                                <thead class="thead-inverse">
+                                                    <tr>
+                                                        <td>Date</td>
+                                                        <td>Formation</td>
+                                                        <td>Nombre de jours</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                     <tr>
+                                                        <td>28/09/2016</td>
+                                                        <td>Premiers secours de base pour l'instruction</td>
+                                                        <td>12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30/09/2016</td>
+                                                        <td>Secourisme élémentaire commercial</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class=" img-responsive" src="../img/person.png">
+                                        </div>
+                                     </div>
+                                     <br>
+                                     <div class="row">
+                                        <div class="col-md-6">
+                                            <h3>Détail de votre contact</h3>
+                                            <p>Email:diallom673@gmail.com</p>
+                                            <p>Téléphone: 620201311</p>
+                                            <p>Residence Adress: Université Paris</p>
+                                            <p>Lieu de travail: RC1</p>
+                                            <p>Adresse du lieu de travail: univesité Paris, 237</p>
+                                            <p><a href="#"><u>Modifier les détails de votre contact</u></a></p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Vos preferences</h3>
+                                            <p>Comment pouvez-vous contribuer à la Croix-Rouge guinéenne?</p>
+                                            <p>En faisant des dons:  Oui</p>
+                                            <p>En devenant membre:  Non</p>
+                                            <p>En étant volontaire: Non</p>
+                                            <p>Intéressant, Kills, etc., je suis très bon à beaucoup</p>
+                                            <p><a href="#"><u>Modifier vos preferences</u></a></p>
+                                        </div>
+                                     </div>
+                                     <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="col-md-6">
+                                                <h3>Détail de vos informations personnelles</h3>
+                                                <p>Nom complet: Mamadou Saliou Diallo</p>
+                                                <p>Titre: Prof.</p>
+                                                <p>Année de naissance: 1995</p>
+                                                <p>Genre: Masculin</p>
+                                                <p>Situation matrimoniale: Célibataire</p>
+                                                <p>Occupation: Développeur</p>
+                                                <p>Discipline: O</p>
+                                                <p>Etudiant: Yes</p>
+                                                <p>Education level: Licence</p>
+                                                <p><a href="#"><u>Modifier les détails de vos informations personnelles</u></a></p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>
+                                                    <img class="img-responsive certificates" src="../img/member.png">
+                                                    signature
+                                                </p>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="col-md-4">
+                                   <div class="row">
+                                        <div class="col-12">
+                                            <p>Bronze 1500 FG</p>
+                                            <p>Associer 2000 FG</p>
+                                            <p>Argent 5000 FG</p>
+                                            <p>Or 10000 FG</p>
+                                            <p>Diamant 15000 FG</p>
+                                            <p>Platium 25000 FG</p>
+                                        </div>
+                                        <div class="col-12">
+                                            <p>Comme complément, si vous contribuez à la croix rouge, vous serez récompensé par des certificats. Veuillez contacter votre agence pour plus d'informations. Il est important de s'assurer que les membres et les bénévoles de l'organisation sont compétents, à jour, nous nous sommes préparés à réagir de façon officielle et efficace lors des émergences.</p>
+                                            <p>Il y a quatre types de certificats</p>
+                                            <ul>
+                                                <li>Certificat d'adhésion</li>
+                                                <li>Certificat de don</li>
+                                                <li>Certificat de bénévolat</li>
+                                                <li>Attestation de formation</li>
+                                            </ul>
+                                            <img src="../img/certificate.png" class="certificate img-responsive" >
+                                             <p>7 principes fondamentaux du mouvement de la croix rouge et du croissant rouge</p>
+                                             <ul>
+                                                <li>Humanité</li>
+                                                <li>etc...</li>
+                                             </ul>
+                                        </div>
+                                   </div> 
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
